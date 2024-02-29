@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="port.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#me">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#daily-works">Daily works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Home Page -->
+<section id="home" class="page">
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is a showcase of my work and skills.</p>
+  </div>
+</section>
+<section id="me">
+  <div class="container">
+  <header>
+    <h1>Adithya.M</h1>
+    <p>Student</p>
+  </header>
+  <section class="personal-info">
+    <div class="profile-pic">
+      <img src="imgadi.jpg" alt="Profile Picture">
+    </div>
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>I am currently pursuing a Bachelor of Engineering at St. Joseph's Institute of Technology, specializing in Computer Science and Engineering. I am deeply passionate about learning new technologies and am driven by a strong problem-solving instinct. With robust analytical skills, I approach challenges creatively and thrive in collaborative environments. My achievements include winning awards in events like Hack-a-bot and leading teams effectively. Notably, I emerged victorious in the Rajasthan Police Hackathon 2024. Beyond my academic pursuits, I harbor aspirations of establishing a startup or delving into research within the field of genetics.</p>
+    </div>
+  </section>
+</div>
+</section>
+<!-- Work Page -->
+<!-- Work Page -->
+<section id="work" class="page">
+  <div class="container">
+    <h2>Work Profile</h2>
+    <div class="row">
+      <!-- Bootstrap Project Divs with Hover Effects -->
+      <div class="col-md-4">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Herbal Cyber Guardians - Ayurvedic Plant Identification</h5>
+            <p class="card-text">A platform that aims to provide awareness about natural medicines over English medicines. This platform helps in providing favourable insights such as scientific name, medicinal details, chemical composition, conditions for use, by just scanning the plant using a Deep Learning Algorithm. It also has the functionality to find the natural remedy for the given health problem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Rajasthan Police Hackathon- Money Transfer Fraud Detection</h5>
+            <p class="card-text">A platform mainly for banks and police which helps them to find fraud during money transfers using the Isolation Forest algorithm and find anomalies using Random Forest algorithms. There are also more user-friendly add-ons to predict and capture the criminal, as well as alert the user.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Error 404 - Face Detection and Attendance System</h5>
+            <p class="card-text">An application that is primarily installed in groups, like colleges, schools, or societies, can be used only when connected to a specific WiFi produced by a WiFi module within a specific range. After connection, it asks for Biometric Authentication. Afterwards, it predicts using face recognition and marks attendance for that particular student.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<!-- Skills Section -->
+<section id="skills" class="page">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="row">
+    <div class="col-md-4">
+    <form id="link1">
+    <canvas id="skillsChart" width="200" height="200"></canvas>
+  </form>
+</div>
+  <br>
+  <div class="col-md-4">
+  <form id="link1">
+    <canvas id="dailyWorksChart" width="200" height="200"></canvas>
+  </form>
+</div>
+  </div>
+</div>
+</section>
+
+<!-- Daily Works Section -->
+<section id="daily-works" class="page">
+  <div class="container">
+    <h2>Daily Works</h2>
+    <!-- Daily Works Form -->
+    <form>
+      <div class="form-group">
+        <label for="workDate">Date:</label>
+        <input type="date" class="form-control" id="workDate">
+      </div>
+      <div class="form-group">
+        <label for="workDescription">Description:</label>
+        <textarea class="form-control" id="workDescription" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+<!-- Resume Page -->
+<br>
+<section id="resume" class="page">
+  <div class="container">
+    <h2>Resume</h2>
+    <!-- Button to Download Resume -->
+    <a href="d:\adithya m\Adithya m.pdf" class="btn btn-primary">Download Resume</a>
+  </div>
+</section>
+<br>
+<!-- Contact Page -->
+<section id="contact">
+<div class="container">
+  <h1>Contact Me</h1>
+  <p>Feel free to reach out to me through the form below or via social media!</p>
+  
+  <!-- Contact Form -->
+  <form action="#" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control dark-input" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control dark-input" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea class="form-control dark-input" id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+  <!-- Contact Links -->
+  <div class="contact-links">
+    <a href="m.adithya.2k5@gmail.com" class="contact-icon"><i class="fab fa-gmail">&#9993;</i></a> <!-- Instagram -->
+    <a href="https://www.linkedin.com/in/adithya-m-58714425b/" class="contact-icon"><i class="fab fa-linkedin"></i></a> <!-- LinkedIn -->
+    <a href="https://github.com/M-adithya-0925" class="contact-icon"><i class="fab fa-github"></i></a> <!-- GitHub -->
+    <a href="tel:+91 8148302132" class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg></a> <!-- Phone -->
+  </div>
+</div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="chart.js"></script>
+</body>
+</html>
