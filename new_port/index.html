@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithya M - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --accent-color: #00cec9;
+            --text-color: #2d3436;
+            --hover-color: #00b894;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+            padding: 120px 0;
+            margin-bottom: 50px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .skill-badge {
+            background-color: #e9ecef;
+            color: var(--text-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .contact-icon {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-icon:hover {
+            color: var(--hover-color);
+        }
+
+        .project-card {
+            height: 100%;
+        }
+
+        .achievement-item {
+            padding: 15px;
+            border-left: 3px solid var(--accent-color);
+            margin-bottom: 15px;
+            background-color: white;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">AM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+        <div class="container text-center">
+            <img src="/api/placeholder/150/150" alt="Profile" class="profile-img mb-4">
+            <h1 class="display-4 fw-bold mb-3">Adithya M</h1>
+            <p class="lead mb-4">Full-Stack Developer | AI Enthusiast | RPA Developer</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="mailto:m.adithya.2k5@gmail.com" class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adithya-m-58714425b/" target="_blank" class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5" id="skills">
+        <div class="container">
+            <h2 class="section-title text-center">Core Skills</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+                        <h5>Full Stack Development</h5>
+                        <div class="mt-3">
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Node</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                        <h5>AI & ML</h5>
+                        <div class="mt-3">
+                            <span class="skill-badge">Machine Learning</span>
+                            <span class="skill-badge">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
+                        <h5>RPA</h5>
+                        <div class="mt-3">
+                            <span class="skill-badge">UIPath</span>
+                            <span class="skill-badge">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                        <h5>Mobile Development</h5>
+                        <div class="mt-3">
+                            <span class="skill-badge">Flutter</span>
+                            <span class="skill-badge">Dart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5 bg-light" id="projects">
+        <div class="container">
+            <h2 class="section-title text-center">Featured Projects</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Herbal Cyber Guardians</h5>
+                            <p class="card-text">Ayurvedic Plant Identification system using Deep Learning technologies for accurate plant classification.</p>
+                            <div class="mt-3">
+                                <span class="skill-badge">Deep Learning</span>
+                                <span class="skill-badge">Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Money Transfer Fraud Detection</h5>
+                            <p class="card-text">Award-winning project developed for Rajasthan Police Hackathon to detect and prevent fraudulent money transfers.</p>
+                            <div class="mt-3">
+                                <span class="skill-badge">ML</span>
+                                <span class="skill-badge">Fraud Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Detection Attendance System</h5>
+                            <p class="card-text">Mobile application developed using Flutter for automated attendance tracking using facial recognition.</p>
+                            <div class="mt-3">
+                                <span class="skill-badge">Flutter</span>
+                                <span class="skill-badge">Face Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-5" id="achievements">
+        <div class="container">
+            <h2 class="section-title text-center">Achievements</h2>
+            <div class="row mt-4">
+                <div class="col-md-8 mx-auto">
+                    <div class="achievement-item">
+                        <h5 class="mb-2">🏆 First Place - Rajasthan Police Hackathon</h5>
+                        <p class="mb-0">Developed an innovative solution for fraud detection in money transfers.</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h5 class="mb-2">🚀 Winner - Shark Tank</h5>
+                        <p class="mb-0">Project Presentation at SRM Easwari Engineering College.</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h5 class="mb-2">⭐ Finalist</h5>
+                        <p class="mb-0">HackRx 4.0, Hack Overflow, PEC Hacks 1.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
